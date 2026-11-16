@@ -1,0 +1,13 @@
+torch>=2.3
+numpy
+scipy
+matplotlib
+librosa
+soundfile
+encodec
+descript-audio-codec
+snac
+transformers==4.47.0
+diffusers==0.31.0
+pesq
+pystoi
