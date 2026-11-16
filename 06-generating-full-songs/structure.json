@@ -1,0 +1,20 @@
+{
+ "Real song with vocals (fishin)": {
+  "score": 0.608,
+  "tempo": 117.5,
+  "beats": 175,
+  "seconds": 88.9
+ },
+ "Real instrumental (sweetwaltz)": {
+  "score": 0.795,
+  "tempo": 152.0,
+  "beats": 119,
+  "seconds": 47.2
+ },
+ "Real instrumental (pistachio)": {
+  "score": 0.572,
+  "tempo": 143.6,
+  "beats": 170,
+  "seconds": 70.1
+ }
+}
