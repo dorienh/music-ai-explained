@@ -14,8 +14,25 @@ By Dorien Herremans. Articles: [Music & AI on Medium](https://medium.com/@dorien
 | `02-neural-audio-codecs/` | Neural Audio Codecs Up Close `[link]` | One codebook against residual vector quantization on real music, codebook usage of EnCodec and DAC, a minimal trainable VQ layer |
 | `03-comparing-codecs/` | I Ran Five Neural Audio Codecs on the Same Music `[link]` | EnCodec, DAC, SNAC, Mimi, Opus and MP3 on the same clips, scored with SI-SDR, mel distance, PESQ and STOI |
 | `04-autoregressive-diffusion-flow-matching/` | Autoregressive, Diffusion, Flow Matching `[link]` | Toy diffusion against flow matching, MusicGen and AudioLDM 2 timings |
+| `05-how-text-becomes-music/` | How Text Becomes Music `[link]` | T5 tokens and embeddings, attention and contrastive loss by hand, CLAP on real recordings and its blind spots, guidance against prompt adherence |
 
-## Running it
+## Notebooks
+
+Each article has a notebook that walks through its worked examples, with figures and audio players. They run in the browser on a free Colab CPU.
+
+| Notebook | Open |
+|---|---|
+| What is an audio codec? | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dorienh/music-ai-explained/blob/main/01-what-is-an-audio-codec/notebook.ipynb) |
+| Codebooks and residual vector quantization | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dorienh/music-ai-explained/blob/main/02-neural-audio-codecs/notebook.ipynb) |
+| Running and comparing codecs | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dorienh/music-ai-explained/blob/main/03-comparing-codecs/notebook.ipynb) |
+| Autoregressive, diffusion, flow matching | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dorienh/music-ai-explained/blob/main/04-autoregressive-diffusion-flow-matching/notebook.ipynb) |
+| How text becomes music | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dorienh/music-ai-explained/blob/main/05-how-text-becomes-music/notebook.ipynb) |
+
+The notebooks are saved with their printed results and figures. Audio players are left out of the saved copy; run a cell to listen.
+
+The scripts next to each notebook produce the exact numbers, tables and figures quoted in the articles, including the slower benchmarks.
+
+## Running the scripts
 
 ```bash
 pip install -r requirements.txt
@@ -37,6 +54,14 @@ Notes:
 ## Learn more
 
 For the full picture of music audio generation, see our 132-page tutorial: Modrzejewski, Kurkowska, Herremans (2026), [A Tutorial on Generative Models for Music Audio](https://arxiv.org/abs/2610.38252).
+
+## Figures
+
+`assets/` holds the figures and table images used in the published articles.
+
+## Licence
+
+Code: MIT, see `LICENSE`.
 
 ## Test audio
 

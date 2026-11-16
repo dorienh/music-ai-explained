@@ -1,0 +1,218 @@
+[
+ {
+  "prompt": "sad jazz with brushed drums",
+  "scale": 1.0,
+  "seed": 0,
+  "own": 0.40011662244796753,
+  "others": 0.060610110561052956,
+  "top1": 1,
+  "seconds": 6.826788902282715
+ },
+ {
+  "prompt": "sad jazz with brushed drums",
+  "scale": 1.0,
+  "seed": 1,
+  "own": 0.26567965745925903,
+  "others": 0.0910562127828598,
+  "top1": 1,
+  "seconds": 6.051860094070435
+ },
+ {
+  "prompt": "sad jazz with brushed drums",
+  "scale": 3.0,
+  "seed": 0,
+  "own": 0.4118396043777466,
+  "others": 0.09460953064262867,
+  "top1": 1,
+  "seconds": 16.989689826965332
+ },
+ {
+  "prompt": "sad jazz with brushed drums",
+  "scale": 3.0,
+  "seed": 1,
+  "own": 0.4810991585254669,
+  "others": 0.12613614524404207,
+  "top1": 1,
+  "seconds": 16.152868032455444
+ },
+ {
+  "prompt": "sad jazz with brushed drums",
+  "scale": 7.0,
+  "seed": 0,
+  "own": 0.4446142315864563,
+  "others": 0.17596851227184138,
+  "top1": 1,
+  "seconds": 16.122918844223022
+ },
+ {
+  "prompt": "sad jazz with brushed drums",
+  "scale": 7.0,
+  "seed": 1,
+  "own": 0.5319300889968872,
+  "others": 0.21644576887289682,
+  "top1": 1,
+  "seconds": 16.125449895858765
+ },
+ {
+  "prompt": "fast techno with a heavy kick drum",
+  "scale": 1.0,
+  "seed": 0,
+  "own": 0.08584535866975784,
+  "others": 0.14202948473393917,
+  "top1": 0,
+  "seconds": 5.911628007888794
+ },
+ {
+  "prompt": "fast techno with a heavy kick drum",
+  "scale": 1.0,
+  "seed": 1,
+  "own": 0.004144283011555672,
+  "others": 0.010021318991978964,
+  "top1": 0,
+  "seconds": 6.004154205322266
+ },
+ {
+  "prompt": "fast techno with a heavy kick drum",
+  "scale": 3.0,
+  "seed": 0,
+  "own": 0.44293710589408875,
+  "others": -0.02852945774793625,
+  "top1": 1,
+  "seconds": 15.704421997070312
+ },
+ {
+  "prompt": "fast techno with a heavy kick drum",
+  "scale": 3.0,
+  "seed": 1,
+  "own": 0.5299049615859985,
+  "others": 0.04078603287537893,
+  "top1": 1,
+  "seconds": 16.058065176010132
+ },
+ {
+  "prompt": "fast techno with a heavy kick drum",
+  "scale": 7.0,
+  "seed": 0,
+  "own": 0.44152283668518066,
+  "others": 0.024756476283073425,
+  "top1": 1,
+  "seconds": 15.619915008544922
+ },
+ {
+  "prompt": "fast techno with a heavy kick drum",
+  "scale": 7.0,
+  "seed": 1,
+  "own": 0.33798712491989136,
+  "others": 0.13311046610275903,
+  "top1": 1,
+  "seconds": 15.984760999679565
+ },
+ {
+  "prompt": "solo classical guitar, slow and gentle",
+  "scale": 1.0,
+  "seed": 0,
+  "own": 0.4977434277534485,
+  "others": 0.17521410683790842,
+  "top1": 1,
+  "seconds": 5.707984209060669
+ },
+ {
+  "prompt": "solo classical guitar, slow and gentle",
+  "scale": 1.0,
+  "seed": 1,
+  "own": 0.29634273052215576,
+  "others": 0.13023870686690012,
+  "top1": 1,
+  "seconds": 5.98444128036499
+ },
+ {
+  "prompt": "solo classical guitar, slow and gentle",
+  "scale": 3.0,
+  "seed": 0,
+  "own": 0.5122040510177612,
+  "others": 0.12355018903811772,
+  "top1": 1,
+  "seconds": 16.0783109664917
+ },
+ {
+  "prompt": "solo classical guitar, slow and gentle",
+  "scale": 3.0,
+  "seed": 1,
+  "own": 0.36087873578071594,
+  "others": 0.17780441542466482,
+  "top1": 1,
+  "seconds": 15.956403017044067
+ },
+ {
+  "prompt": "solo classical guitar, slow and gentle",
+  "scale": 7.0,
+  "seed": 0,
+  "own": 0.4531813859939575,
+  "others": 0.16404740512371063,
+  "top1": 1,
+  "seconds": 16.12824821472168
+ },
+ {
+  "prompt": "solo classical guitar, slow and gentle",
+  "scale": 7.0,
+  "seed": 1,
+  "own": 0.3805508613586426,
+  "others": 0.1450534084190925,
+  "top1": 1,
+  "seconds": 16.12080693244934
+ },
+ {
+  "prompt": "an orchestra playing a triumphant fanfare",
+  "scale": 1.0,
+  "seed": 0,
+  "own": 0.26833873987197876,
+  "others": 0.057277439162135124,
+  "top1": 1,
+  "seconds": 5.79860782623291
+ },
+ {
+  "prompt": "an orchestra playing a triumphant fanfare",
+  "scale": 1.0,
+  "seed": 1,
+  "own": 0.28093016147613525,
+  "others": 0.030693129325906437,
+  "top1": 1,
+  "seconds": 6.000099182128906
+ },
+ {
+  "prompt": "an orchestra playing a triumphant fanfare",
+  "scale": 3.0,
+  "seed": 0,
+  "own": 0.3672741651535034,
+  "others": 0.11765882869561513,
+  "top1": 1,
+  "seconds": 16.080270767211914
+ },
+ {
+  "prompt": "an orchestra playing a triumphant fanfare",
+  "scale": 3.0,
+  "seed": 1,
+  "own": 0.43603646755218506,
+  "others": 0.04500019053618113,
+  "top1": 1,
+  "seconds": 16.417110204696655
+ },
+ {
+  "prompt": "an orchestra playing a triumphant fanfare",
+  "scale": 7.0,
+  "seed": 0,
+  "own": 0.6071861982345581,
+  "others": 0.14019825309515,
+  "top1": 1,
+  "seconds": 15.937626123428345
+ },
+ {
+  "prompt": "an orchestra playing a triumphant fanfare",
+  "scale": 7.0,
+  "seed": 1,
+  "own": 0.5664554834365845,
+  "others": 0.16656746715307236,
+  "top1": 1,
+  "seconds": 16.259926080703735
+ }
+]

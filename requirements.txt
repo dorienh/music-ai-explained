@@ -11,3 +11,4 @@ transformers==4.47.0
 diffusers==0.31.0
 pesq
 pystoi
+pandas
