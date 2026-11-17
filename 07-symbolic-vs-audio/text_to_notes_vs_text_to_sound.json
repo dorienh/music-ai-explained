@@ -1,0 +1,32 @@
+{
+ "prompt": "A cheerful pop song with piano, electric bass and drums, in C major, 4/4 time, at a moderate tempo of 110 beats per minute.",
+ "symbolic": {
+  "params": 225425036,
+  "tokens": 800,
+  "seconds_compute": 85.07963609695435,
+  "notes": 185,
+  "seconds_music": 7.049218499999999,
+  "bytes": 1649,
+  "tracks": [
+   "Electric Guitar (jazz)",
+   "Acoustic Grand Piano",
+   "Electric Bass (finger)",
+   "Lead 3 (calliope)",
+   "Electric Grand Piano",
+   "Bright Acoustic Piano",
+   "drums",
+   "Baritone Sax",
+   "Alto Sax"
+  ],
+  "in_c_major": 0.9831932773109243,
+  "tempo": 121.29004087474378,
+  "vocab": 524
+ },
+ "audio": {
+  "params": 588981826,
+  "tokens": 1408,
+  "seconds_compute": 28.167543172836304,
+  "seconds_music": 6.98,
+  "bytes": 446720
+ }
+}

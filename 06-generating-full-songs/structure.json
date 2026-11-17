@@ -1,20 +1,44 @@
 {
  "Real song with vocals (fishin)": {
   "score": 0.608,
+  "last_vs_first": 0.551,
   "tempo": 117.5,
   "beats": 175,
   "seconds": 88.9
  },
  "Real instrumental (sweetwaltz)": {
   "score": 0.795,
+  "last_vs_first": 0.816,
   "tempo": 152.0,
   "beats": 119,
   "seconds": 47.2
  },
  "Real instrumental (pistachio)": {
   "score": 0.572,
+  "last_vs_first": 0.461,
   "tempo": 143.6,
   "beats": 170,
   "seconds": 70.1
+ },
+ "MusicGen chained to 90 s, seed 0": {
+  "score": 0.529,
+  "last_vs_first": -0.189,
+  "tempo": 117.5,
+  "beats": 173,
+  "seconds": 89.4
+ },
+ "MusicGen chained to 90 s, seed 1": {
+  "score": 0.641,
+  "last_vs_first": 0.408,
+  "tempo": 172.3,
+  "beats": 261,
+  "seconds": 89.1
+ },
+ "MusicGen chained to 90 s, seed 2": {
+  "score": 0.541,
+  "last_vs_first": 0.142,
+  "tempo": 92.3,
+  "beats": 136,
+  "seconds": 88.8
  }
 }

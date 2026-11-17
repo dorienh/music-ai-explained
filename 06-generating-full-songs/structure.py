@@ -3,6 +3,10 @@
 A self-similarity matrix compares every moment of a recording with every other moment.
 A chorus that returns shows up as a stripe parallel to the main diagonal.
 
+Second score, 'last vs first': for every beat in the last third (30 s of a 90 s piece),
+the best match in the first third, averaged. A chained MusicGen piece never sees its own first
+30 seconds again after second 50, so this is where forgetting should show.
+
 The 'return score' of a recording: for every beat, how similar is the best-matching
 passage at least 15 seconds away? Averaged over beats. A song whose sections recur
 scores high; music that keeps moving on to new material scores low.
@@ -39,17 +43,22 @@ def analyse(path, seconds=90):
     S = f.T @ f                                              # cosine similarity, beats x beats
     far = np.abs(t[:, None] - t[None, :]) >= MIN_LAG
     score = float(np.mean(np.where(far, S, -1).max(axis=1)))
-    return S, t, tempo, score
+    dur = len(y) / sr
+    first, last = t < dur / 3, t >= 2 * dur / 3               # does the last third revisit the first third?
+    back = float(np.mean(S[np.ix_(last, first)].max(axis=1)))
+    return S, t, tempo, score, back
 
 recs = {"Real song with vocals (fishin)": os.path.join(AUDIO, "fishin.wav"),
         "Real instrumental (sweetwaltz)": os.path.join(AUDIO, "sweetwaltz.wav"),
         "Real instrumental (pistachio)": os.path.join(AUDIO, "pistachio.wav"),
-        "MusicGen, 30 s windows stretched to 90 s": os.path.join(HERE, "out", "musicgen_90s.wav")}
+        **{f"MusicGen chained to 90 s, seed {k}": os.path.join(HERE, "out", f"musicgen_90s_s{k}.wav") for k in range(3)}}
 res = {}
 for name, p in recs.items():
     if not os.path.exists(p): print("missing", p, "- run generate_long.py first"); continue
-    S, t, tempo, score = analyse(p)
-    res[name] = {"score": round(score, 3), "tempo": round(tempo, 1), "beats": len(t), "seconds": round(float(t[-1]), 1)}
-    np.save(os.path.join(HERE, "out", f"ssm_{len(res)}.npy"), np.vstack([t[None], S]))
-    print(f"{name:45s} return score {score:.3f}   ({len(t)} beats, {tempo:.0f} BPM)")
+    S, t, tempo, score, back = analyse(p)
+    res[name] = {"score": round(score, 3), "last_vs_first": round(back, 3), "tempo": round(tempo, 1), "beats": len(t), "seconds": round(float(t[-1]), 1)}
+    np.save(os.path.join(HERE, "out", f"ssm_{len(res)}.npy"), np.vstack([t[None], S]))   # numbered in the order above
+    print(f"{name:45s} return score {score:.3f}   last third vs first third {back:.3f}   ({len(t)} beats, {tempo:.0f} BPM)")
+mg = [v for k, v in res.items() if k.startswith("MusicGen")]
+if mg: print(f"{'MusicGen mean of ' + str(len(mg)) + ' seeds':45s} return score {np.mean([v['score'] for v in mg]):.3f}   last third vs first third {np.mean([v['last_vs_first'] for v in mg]):.3f}")
 json.dump(res, open(os.path.join(HERE, "structure.json"), "w"), indent=1)

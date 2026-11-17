@@ -12,3 +12,9 @@ diffusers==0.31.0
 pesq
 pystoi
 pandas
+faster-whisper
+miditok
+music21
+mido
+pretty_midi
+psutil

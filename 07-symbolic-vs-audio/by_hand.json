@@ -1,0 +1,100 @@
+{
+ "phrase": {
+  "midi_like": [
+   "VELOCITY_80",
+   "NOTE_ON_60",
+   "TIME_SHIFT_500ms",
+   "NOTE_OFF_60",
+   "NOTE_ON_64",
+   "TIME_SHIFT_500ms",
+   "NOTE_OFF_64",
+   "NOTE_ON_67",
+   "TIME_SHIFT_500ms",
+   "NOTE_OFF_67",
+   "NOTE_ON_72",
+   "TIME_SHIFT_500ms",
+   "NOTE_OFF_72"
+  ],
+  "remi": [
+   "BAR",
+   "POSITION_1/16",
+   "PITCH_60",
+   "VELOCITY_80",
+   "DURATION_4/16",
+   "POSITION_5/16",
+   "PITCH_64",
+   "VELOCITY_80",
+   "DURATION_4/16",
+   "POSITION_9/16",
+   "PITCH_67",
+   "VELOCITY_80",
+   "DURATION_4/16",
+   "POSITION_13/16",
+   "PITCH_72",
+   "VELOCITY_80",
+   "DURATION_4/16"
+  ],
+  "compound": [
+   "(bar 1, position 1/16, pitch 60, duration 4/16, velocity 80)",
+   "(bar 1, position 5/16, pitch 64, duration 4/16, velocity 80)",
+   "(bar 1, position 9/16, pitch 67, duration 4/16, velocity 80)",
+   "(bar 1, position 13/16, pitch 72, duration 4/16, velocity 80)"
+  ],
+  "abc": "C E G c |",
+  "rows": [
+   [
+    "MIDI file",
+    69,
+    "bytes"
+   ],
+   [
+    "MIDI-like events",
+    13,
+    "tokens"
+   ],
+   [
+    "REMI",
+    17,
+    "tokens"
+   ],
+   [
+    "Compound word / Octuple",
+    4,
+    "tokens of 5 fields"
+   ],
+   [
+    "ABC notation",
+    5,
+    "characters"
+   ],
+   [
+    "Piano roll, 16 steps x 88 keys",
+    1408,
+    "cells, 16 of them on"
+   ],
+   [
+    "EnCodec tokens (50 frames/s x 4 codebooks)",
+    400,
+    "tokens"
+   ],
+   [
+    "CD audio (44,100 samples/s x 2 channels)",
+    176400,
+    "samples"
+   ]
+  ]
+ },
+ "chorale": {
+  "title": "Aus meines Herzens Grunde",
+  "notes": 228,
+  "seconds": 47.2,
+  "midi_bytes": 1641,
+  "wav_bytes": 8334900,
+  "mp3_bytes": 756000
+ },
+ "corpus": {
+  "chorales": 371,
+  "notes": 88737,
+  "minutes": 252.0
+ }
+}

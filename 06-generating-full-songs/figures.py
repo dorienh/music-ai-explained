@@ -43,10 +43,10 @@ if os.path.exists(p):
                         ("split", BLUE, "Voice and music coded separately"),
                         ("raw", INK2, "Uncoded mix")):
         ys = [m(k, v) for v in vars_]
-        ax.plot(vars_, ys, "o-", color=col, ms=6, lw=2 if k != "raw" else 1.5, ls="-" if k != "raw" else "--")
+        ax.plot(vars_, ys, marker="o", color=col, ms=6, lw=2 if k != "raw" else 1.5, ls="-" if k != "raw" else "--")
         ax.annotate(lab, (vars_[-1], ys[-1]), xytext=(8, 0), textcoords="offset points", va="center", fontsize=9.5, color=col)
-    ax.axhline(m("mixed", None), color=GRID, lw=1); ax.text(6.2, m("mixed", None) + 1, "voice alone through the codec", fontsize=8.5, color=INK2)
-    ax.set_xlim(6.5, -16.5); ax.set_xticks(vars_); ax.set_xticklabels([f"{v:+d}" for v in vars_])
+    ax.axhline(m("mixed", None), color=GRID, lw=1); ax.text(4.5, m("mixed", None) - 0.6, "voice alone through the codec", fontsize=8.5, color=INK2, va="top")
+    ax.set_xlim(6.5, -16.5); ax.set_xticks(vars_); ax.set_xticklabels([f"{v:+d}" if v else "0" for v in vars_])
     ax.set_xlabel("Voice level relative to the music (dB)  →  music gets louder"); ax.set_ylabel("Words wrong (WER, %)")
     ax.set_ylim(bottom=0)
     save(fig, "fig_words_lost.png")
@@ -58,10 +58,12 @@ if os.path.exists(pa) and os.path.exists(pb):
     names = list(st)
     fig, axes = plt.subplots(1, 2, figsize=(10, 4.9))
     for ax, path, name, label in ((axes[0], pa, names[0], "A real song (fishin, first 90 s)"),
-                                  (axes[1], pb, names[3], "MusicGen, 30-second windows chained to 90 s")):
+                                  (axes[1], pb, names[3], "MusicGen, 30-second windows chained to 90 s (seed 0)")):
         A = np.load(path); t, S = A[0], A[1:]
         ax.imshow(S, origin="lower", cmap="Blues", vmin=0, vmax=1, extent=[t[0], t[-1], t[0], t[-1]], aspect="equal")
-        ax.set_title(f"{label}\nreturn score {st[name]['score']:.2f}", fontsize=10, loc="left")
+        ax.set_title(f"{label}\nlast third vs first third: {st[name]['last_vs_first']:.2f}", fontsize=10, loc="left")
+        n = t[-1] / 3
+        ax.add_patch(plt.Rectangle((0, 2 * n), n, n, fill=False, ec=ORANGE, lw=1.5, ls="--"))
         ax.set_xlabel("Time (s)"); ax.grid(False)
     axes[0].set_ylabel("Time (s)")
     fig.tight_layout(); save(fig, "fig_self_similarity.png")

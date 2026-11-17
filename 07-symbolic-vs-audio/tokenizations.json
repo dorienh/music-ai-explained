@@ -1,0 +1,86 @@
+{
+ "MIDI-like": {
+  "vocab": 398,
+  "steps": 297529,
+  "fields": 297529,
+  "per_note": 3.3529305701116785,
+  "per_second": 19.680284426805574,
+  "what": "note-on, note-off, time-shift or velocity"
+ },
+ "TSD": {
+  "vocab": 313,
+  "steps": 296976,
+  "fields": 296976,
+  "per_note": 3.346698671354677,
+  "per_second": 19.64370581669354,
+  "what": "like MIDI-like, with a duration instead of a note-off"
+ },
+ "REMI": {
+  "vocab": 282,
+  "steps": 302377,
+  "fields": 302377,
+  "per_note": 3.4075639248565985,
+  "per_second": 20.000959113646697,
+  "what": "bar, position, pitch, velocity or duration"
+ },
+ "Structured": {
+  "vocab": 314,
+  "steps": 354948,
+  "fields": 354948,
+  "per_note": 4.0,
+  "per_second": 23.47830832196453,
+  "what": "pitch, velocity, duration, time-shift in fixed order"
+ },
+ "Compound Word": {
+  "vocab": 304,
+  "steps": 124903,
+  "fields": 624515,
+  "per_note": 1.4075639248565988,
+  "per_second": 8.261804952664434,
+  "what": "one bundle of fields per note or per position"
+ },
+ "Octuple": {
+  "vocab": 357,
+  "steps": 88737,
+  "fields": 443685,
+  "per_note": 1.0,
+  "per_second": 5.8695770804911325,
+  "what": "one bundle of fields per note"
+ },
+ "REMI + BPE (1000)": {
+  "vocab": 1000,
+  "steps": 77008,
+  "per_note": 0.8678228923673327,
+  "per_second": 5.093753358964818,
+  "what": "a learned group of REMI tokens"
+ },
+ "REMI + BPE (5000)": {
+  "vocab": 5000,
+  "steps": 50192,
+  "per_note": 0.5656265143063209,
+  "per_second": 3.3199884244904707,
+  "what": "a learned group of REMI tokens"
+ },
+ "EnCodec 32 kHz (MusicGen)": {
+  "per_second": 50,
+  "tokens_per_second": 200,
+  "vocab": 2048,
+  "audio": true
+ },
+ "DAC 44.1 kHz": {
+  "per_second": 86,
+  "tokens_per_second": 774,
+  "vocab": 1024,
+  "audio": true
+ },
+ "Stable Audio latent (64 numbers per frame)": {
+  "per_second": 21.5,
+  "tokens_per_second": 1376,
+  "vocab": null,
+  "audio": true
+ },
+ "_corpus": {
+  "notes": 88737,
+  "seconds": 15118.125
+ }
+}

@@ -1,0 +1,92 @@
+[
+ {
+  "kind": "attention",
+  "n": 512,
+  "seconds": 0.0021371841430664062,
+  "extra_mb": 12.20608
+ },
+ {
+  "kind": "state space",
+  "n": 512,
+  "seconds": 0.07175207138061523,
+  "extra_mb": 19.136512
+ },
+ {
+  "kind": "attention",
+  "n": 1024,
+  "seconds": 0.004279136657714844,
+  "extra_mb": 28.196864
+ },
+ {
+  "kind": "state space",
+  "n": 1024,
+  "seconds": 0.12272405624389648,
+  "extra_mb": 33.1776
+ },
+ {
+  "kind": "attention",
+  "n": 2048,
+  "seconds": 0.011110305786132812,
+  "extra_mb": 57.720832
+ },
+ {
+  "kind": "state space",
+  "n": 2048,
+  "seconds": 0.17514610290527344,
+  "extra_mb": 50.593792
+ },
+ {
+  "kind": "attention",
+  "n": 4096,
+  "seconds": 0.028493642807006836,
+  "extra_mb": 128.024576
+ },
+ {
+  "kind": "state space",
+  "n": 4096,
+  "seconds": 0.27596473693847656,
+  "extra_mb": 93.863936
+ },
+ {
+  "kind": "attention",
+  "n": 8192,
+  "seconds": 0.09159421920776367,
+  "extra_mb": 477.003776
+ },
+ {
+  "kind": "state space",
+  "n": 8192,
+  "seconds": 0.5596120357513428,
+  "extra_mb": 173.228032
+ },
+ {
+  "kind": "attention",
+  "n": 16384,
+  "seconds": 0.3038649559020996,
+  "extra_mb": 1760.886784
+ },
+ {
+  "kind": "state space",
+  "n": 16384,
+  "seconds": 1.0186660289764404,
+  "extra_mb": 338.49344
+ },
+ {
+  "kind": "attention",
+  "n": 32768,
+  "seconds": 1.301203966140747,
+  "extra_mb": 6726.303744
+ },
+ {
+  "kind": "state space",
+  "n": 32768,
+  "seconds": 1.8326818943023682,
+  "extra_mb": 662.863872
+ },
+ {
+  "kind": "state space",
+  "n": 65536,
+  "seconds": 3.993647813796997,
+  "extra_mb": 1310.851072
+ }
+]
